@@ -16,5 +16,6 @@ public class Ex_3 {
         System.out.println("Total de lanches consumidos: " + soma);
         System.out.println("Média de lanches por hora: " + media);
         
+        teclado.close();
     }
 }

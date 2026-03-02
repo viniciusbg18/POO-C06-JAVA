@@ -15,5 +15,6 @@ public class Ex_3 {
         double media = soma / 3.0;
         System.out.println("Total de lanches consumidos: " + soma);
         System.out.println("Média de lanches por hora: " + media);
+        
     }
 }

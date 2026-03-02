@@ -1,4 +1,4 @@
-public class Aula2 {
+public class Ex_1 {
     public static void main(String[] args) {
         int horas = 3; 
         int primera_hora = 10;

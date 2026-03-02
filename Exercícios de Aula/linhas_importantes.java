@@ -51,5 +51,7 @@ public class linhas_importantes {
         String nome = teclado.nextLine(); // Lendo o nome do usuário
 
         System.out.printf("%d, %.2f, %s \n", idadeUsuario, altura, nome); // Imprimindo os valores lidos do usuário usando printf
+        
+        teclado.close(); // Fechando o Scanner para liberar os recursos
     }
 }

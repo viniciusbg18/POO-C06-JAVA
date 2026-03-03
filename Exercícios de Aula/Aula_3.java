@@ -14,6 +14,21 @@ public class Aula_3 {
             System.out.println("Qtd é menor ou igual a 3");
         }
 
+        switch(qtd){
+            case 1:
+                System.out.println("Qtd é igual a 1");
+                System.out.println("Inatel");
+                break;
+            case 2:
+                System.out.println("Qtd é igual a 2");
+                break;
+            case 3:
+                System.out.println("Qtd é igual a 3");
+                break;
+            default:
+                System.out.println("Qtd é maior do que 3");
+        }
+
         teclado.close();
     }
 }

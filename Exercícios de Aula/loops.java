@@ -10,10 +10,10 @@ public class loops {
             System.out.println("Inatel");
         }
 
-        int j = 0;
+        int j = 0; // Variável de controle para o loop while
         while(j < qtd){
             System.out.println("Inatel");
-            j++;
+            j++;// Incrementando a variável de controle para evitar loop infinito
         }
 
         int k = 0;

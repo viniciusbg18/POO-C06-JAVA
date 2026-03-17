@@ -18,4 +18,9 @@ public class Conta {
         this.saldo = this.saldo - quantia;
 
     }
+
+    public void transferir(Conta contaDestino, double quantia){
+        this.saldo -= quantia;
+        contaDestino.saldo += quantia;
+    }
 }

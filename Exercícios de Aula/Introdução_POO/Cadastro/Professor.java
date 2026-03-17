@@ -1,4 +1,4 @@
-package Introdução_POO;
+package Introdução_POO.Cadastro;
 
 public class Professor extends Pessoa{
 

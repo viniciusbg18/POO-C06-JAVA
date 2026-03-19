@@ -2,6 +2,7 @@ package Ex_1_aula4;
 
 public class Zumbi {
     public String Nome;
+    public double vida;
     public int pessoas_devoradas;
     public int ano_que_morreu;
 
@@ -20,5 +21,21 @@ public class Zumbi {
         System.out.println("Aqui jáz " + Nome + " que morreu em " + ano_que_morreu);
     }
 
+    public void atacar(){
+        System.out.println("CÉREBROOOOOO");
+    }
+
+    public void resmungar(){
+        System.out.println("VOLTA AQUI GRRRRRR (fiadamae foge não cacilda)");
+    }
+
+    public double mostraVida(){
+        return this.vida;
+    }
+
+    public void transfereVida (Zumbi zumbiAlvo, double quantia){
+        this.vida += quantia;
+        zumbiAlvo.vida -= quantia;
+    }
 
 }

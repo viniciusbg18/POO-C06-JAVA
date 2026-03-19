@@ -3,11 +3,19 @@ package Introdução_POO.Banco;
 public class Main {
     public static void main(String[] args) {
         Conta conta = new Conta();
+        Cliente cliente = new Cliente();
+
+        conta.titular = cliente;
 
         conta.saldo = 700;
         conta.numeroConta = 12343;
         conta.agencia = 0001;
         conta.limite = 400;
+
+        cliente.nome = "Sarah";
+        cliente.cpf = "111.111.111-11";
+        cliente.endereco = "Filho Da Rua";
+
 
         System.out.println("Na conta " + conta.numeroConta + " tem R$" + conta.saldo);
 
@@ -20,6 +28,9 @@ public class Main {
         System.out.println("Na conta " + conta.numeroConta + " tem R$" + conta.saldo);
 
         System.out.println("--------------------------");
+
+        Empresa empresa = new Empresa();
+        
 
         Conta conta2 = new Conta();
 

@@ -8,6 +8,7 @@ public class Conta {
     public int numero; // numero e numeroConta tem o mesmo papel, porem são de aulas diferentes 
     public int numeroConta;
     public String nomeDono;
+    public Cliente titular;
 
     //métodos 
     public void deposita (double quantia){

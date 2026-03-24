@@ -1,4 +1,4 @@
-package Ex_1_aula4;
+package Exercícios_1_2;
 
 public class Zumbi {
     public String Nome;
@@ -34,8 +34,13 @@ public class Zumbi {
     }
 
     public void transfereVida (Zumbi zumbiAlvo, double quantia){
-        this.vida += quantia;
-        zumbiAlvo.vida -= quantia;
+        if (zumbiAlvo.vida > quantia)
+            this.vida += quantia;
+
+        
+        else{
+            zumbiAlvo.vida -= quantia;
+        }
     }
 
 }

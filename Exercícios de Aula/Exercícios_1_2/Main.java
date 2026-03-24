@@ -1,4 +1,4 @@
-package Ex_1_aula4;
+package Exercícios_1_2;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,7 +56,10 @@ public class Main {
 
 
         System.out.println("___________________");
-        zumbi.transfereVida(zumbi, 2);
+
+        zumbi = zumbi2;
+        zumbi.transfereVida(zumbi, 3);
+        zumbi2.transfereVida(zumbi2, 5);
 
         vidaZumbi = zumbi.mostraVida();
         vidaZumbi2 = zumbi2.mostraVida();

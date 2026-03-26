@@ -1,11 +1,13 @@
 package Introdução_POO.Banco;
 
 public class Conta {
+
     //atributos
+    
     private double saldo;
-    private double limite;
+    //private double limite;
     public int agencia;
-    private int numero; // numero e numeroConta tem o mesmo papel, porem são de aulas diferentes 
+    //private int numero; // numero e numeroConta tem o mesmo papel, porem são de aulas diferentes 
     //public int numeroConta;
     //public String nomeDono;
     //public Cliente titular;

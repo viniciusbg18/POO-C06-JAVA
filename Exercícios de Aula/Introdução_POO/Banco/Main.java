@@ -2,7 +2,7 @@ package Introdução_POO.Banco;
 
 public class Main {
     public static void main(String[] args) {
-        Conta conta = new Conta();
+     /*   Conta conta = new Conta();
         Cliente cliente = new Cliente();
 
         conta.titular = cliente;
@@ -47,7 +47,7 @@ public class Main {
         conta2.saca(400);
 
         System.out.println("Na conta " + conta2.numeroConta + " tem R$" + conta2.saldo);
-
+        */
 
     }
 }

@@ -35,7 +35,7 @@ public class Main2 {
         System.out.println("Conta de " + contaCorrente2.nomeDono + " possui R$" + contaCorrente2.saldo);*/
         //-----------------------------------------------------------------------------------------//
 
-        Conta contaCorrente = new Conta();
+        /*Conta contaCorrente = new Conta();
 
         contaCorrente.saldo = 1000;
         contaCorrente.nomeDono = "Giovanna";
@@ -49,7 +49,7 @@ public class Main2 {
             System.out.println("São iguais");
         else
             System.out.println("São diferentes");
-
+        */
         
 
     }

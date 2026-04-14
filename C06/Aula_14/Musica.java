@@ -1,0 +1,19 @@
+package Aula_14;
+
+public class Musica {
+    private String nome;
+    private double duracao;
+
+    public Musica (String nome, double duracao) {
+        this.nome = nome;
+        this.duracao = duracao;
+    }
+
+    public double getDuracao() {
+        return duracao;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}

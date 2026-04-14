@@ -1,0 +1,29 @@
+2° Exercício de POO com Java - Respostas
+Nome: Vinícius Baganha de Godoy / 2160 / GEC
+______________________________________________________________________________________________________________________________________________________________________________________________
+Questão 1:
+A resposta correta é a letra b)
+
+Questão 2: 
+A resposta correta é a letra c)
+
+Questão 3:
+A diferença dentre classe e objeto está justamente na abstração contra a concretização. Uma classe é um modelo, um molde que define quais características e comportamentos algo pode ter. Já um objeto é a materialização desse modelo, ou seja, uma instância real criada a partir da classe.
+
+Questão 4:
+A resposta correta é a letra c)
+
+Questão 5:
+Não irá retornar nada, pois não adicionamos nada neste array ainda, portanto não há o que printar com carros[0].
+
+Questão 6:
+A resposta correta é a letra c)
+
+Questão 7:
+int[][] = matrizExemplo = new int [5][5];
+
+for(int i = 0; i < matrizExemplo.length; i++){
+	for(int j = 0; j < matriz.Exemplo[i].length; j++){
+		System.out.printl(matrizExemplo[1][2])
+	}
+}

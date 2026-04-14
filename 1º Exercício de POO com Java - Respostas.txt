@@ -1,0 +1,33 @@
+1º Exercício de POO com Java - Respostas
+Nome: Vinícius Baganha de Godoy / 2160 / GEC
+______________________________________________________________________________________________________________________________________________________________________________________________
+Questão 1: 
+a) A saída do programa será "Maior que 5".
+b) A necessidade desta estrutura condicional é orientar e dimensionar o programa para o objetivo requirido 
+
+Questão 2:
+A resposta correta é a letra b)
+
+Questão 3:
+A resposta correta é a letra c)
+
+Questão 4:
+A resposta correta é a letra b)
+
+Questão 5:
+A resposta correta é a letra b)
+
+Questão 6:
+A resposta incorreta é a letra c)
+
+Questão 7:
+A resposta correta é a letra c)
+
+Questão 8:
+Não, na verdade o Java é uma linguagem tipada. Isso se dá pelo fato de que o Java não permite misturar tipos diferentes, além de não conseguir fazer conversões "mágicas" automaticamente e acabar obrigando o programador a declarar o tipo das variáveis na declaração.
+
+Questão 9:
+A JRE é o ambiente utilizado apenas para executar aplicações Java, pois contém a JVM e as bibliotecas necessárias, enquanto a JDK é o kit de desenvolvimento que inclui a JRE e ferramentas como o compilador, sendo utilizada quando se deseja programar, compilar e desenvolver aplicações em Java.
+
+Questão 10:
+https://github.com/viniciusbg18/POO-C06-JAVA/blob/main/Exerc%C3%ADcio%201/Questao_10.java

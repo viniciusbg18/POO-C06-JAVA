@@ -1,7 +1,6 @@
 2° Exercício de POO com Java - Respostas
 Nome: Vinícius Baganha de Godoy / 2160 / GEC
-______________________________________________________________________________________________________________________________________________________________________________________________
-Questão 1:
+____________________________________________________________________________________________________________________________________________________________________________________________Questão 1:
 A resposta correta é a letra b)
 
 Questão 2: 
@@ -27,3 +26,14 @@ for(int i = 0; i < matrizExemplo.length; i++){
 		System.out.printl(matrizExemplo[1][2])
 	}
 }
+
+Questão 8: 
+A resposta correta é a letra b)
+
+Questão 9: 
+A resposta correta é a letra c)
+
+Questão 10:
+https://github.com/viniciusbg18/POO-C06-JAVA/tree/main/C06/br/inatel/notas
+
+OBS.: Talvez tenha ficado meio confuso a organização no git para achar a Questão 10, caso à um empecilho, favor mandar para mim no Teams

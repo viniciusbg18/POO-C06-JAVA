@@ -1,0 +1,233 @@
+Pontos importantes para estudar pra prova de JAVA
+
+Aula 1
+
+- JDK
+Ele é o kit de desenvolvimento e contém:
+
+Compilador (javac)
+Ferramentas (debugger, etc.)
+A própria JRE dentro dele
+
+👉 Ou seja: sem o JDK você nem consegue criar o programa.
+
+Na compilação, o javac transforma o .java em .class, que possui o bytecode
+
+- JRE
+Ele é responsável por:
+
+Carregar o programa
+Fornecer bibliotecas necessárias
+Executar o bytecode
+
+👉 Importante: o JRE já contém a JVM.
+
+- JVM
+Ela:
+
+Lê o bytecode (.class)
+Interpreta ou compila dinamicamente (JIT - Tranforma o bytecode java em código nativo)
+Executa no sistema operacional
+
+👉 É por isso que Java é portável:
+o mesmo .class roda em qualquer lugar que tenha JVM.
+
+Você cria com o JDK, executa com a JRE, e quem realmente roda o código é a JVM.
+
+Quando nativo é melhor?
+• Jogos de alto desempenho;
+• Sistemas embarcados críticos;
+• Drivers de hardware;
+• Processamento em tempo real extremo.
+
+Quando JVM é melhor?
+• Sistemas empresariais;
+• Aplicações web;
+• Sistemas distribuídos;
+• Softwares que precisam rodar em várias plataformas;
+• Projetos grandes e de longa manutenção.
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 2
+
+O Java é uma linguagem fortemente tipada! O que significa que toda variável precisa ter um tipo definido, e esse tipo determina quais valores ela pode armazenar e quais operações podem ser feitas com ela
+Isso traz:
+	mais segurança (menos erros em execução)
+	mais organização
+	melhor desempenho (menos checagens em tempo de execução)
+
+Ordem crescente em memória de tamanho para conversão:
+byte → short → int → long → float → double
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 3 - NADA
+Aula 4 - NADA
+Aula 5
+
+**Imperativo**: Descreve como o programa deve executar passo a passo. O foco está em: Seleção, sequência de instruções e alteração dos estados (variáveis).
+
+O paradigma imperativo possui três “estilos”, ou “subparadigmas”:
+
+- Estruturado: Organiza o fluxo com sequência, decisão e repetição;
+- Procedural: Organiza o código em procedimentos (funções);
+- Orientado a Objetos: Organiza o programa em objetos (dados + comportamento), classes, herança, encapsulamento, polimorfismo, entre outros.
+
+A linguagem C é estruturada, já C++, C# e Java são orientadas a objetos.
+
+**Declarativo**: Descreve o que deve ser feito, não como fazer. O sistema tem a autonomia sobre como executar, o foco é menor no controle de fluxo e alteração de estado.
+
+O paradigma declarativo possui dois “estilos” ou “subparadigmas” mais conhecidos:
+
+- Funcional: Baseado em funções puras e imutabilidade;
+- Lógico: Baseado em regras, fatos e inferência, muito usada em IA.
+
+Qual a diferença entre os paradigmas Procedural e Funcional já que os dois trabalham com função?
+
+**Procedural:** Organiza o código em procedimentos (funções), tendo foco em comandos, sequência de instruções e alteração dos estados das variáveis. Exemplo a linguagem C.
+
+**Funcional**: Baseado em funções puras e imutabilidade, não sendo focado em controle de fluxo e alteração de estado de variáveis.
+
+OBS.: Quando se fala em “Instanciar um Objeto”, indica criar um objeto a partir de determinada classe.
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 6
+
+Herança: Possui como função relacionar classes “mães” e “filhas”, onde as classes “filhas” recebem (herdam) atributos e métodos criados na classe “mãe”. No exemplo dos slides, a classe Professor herdou os atributos e métodos da classe Pessoa, pois todo professor é uma pessoa. Assim não precisamos replicar os mesmos códigos na classe Professor.
+
+Encapsulamento: Possui como função controlar acessos aos atributos e métodos de objetos instanciados, para que somente alguns fiquem disponíveis para uso externo (público), outros somente para uso interno na classe (privado) e outros somente para uso interno e em herança (protegido). Em Java, os atributos e métodos são naturalmente públicos.
+
+Polimorfismo: Basicamente é o conceito no qual determinados métodos herdados de outras classes terem suas formas de funcionamento modificada em determinadas classes “filhas”. O método falar() vem da superclasse Pessoa, e pelo @Override, foi modificado na classe Professor.
+
+Abstração: Possui como função, impedir a instância de objetos de uma determinada classe, reservando-a para heranças em outras classes, no qual, recebem seus atributos e métodos. Para o nosso exemplo de profissões, não faz sentido eu ter objetos do tipo Pessoa. Então ao adicionar abstract, a classe Pessoa ficou limitada a ser usada somente para herança.
+
+Associação: É um relacionamento entre classes onde um objeto usa ou conhece outro objeto. Não é considerado necessariamente como um “pilar”, mas é importante pois os objetos precisam se comunicar.
+
+Classe é um modelo que define atributos e comportamentos, enquanto objeto é uma instância concreta dessa classe em execução.
+Ex.: Classe: contaBancaria
+     Atributos da classe: nome, saldo
+     Objeto: "João", "15000"	
+Método: Função característica incluída na classe específica: Ex.: void deposita -> função para depositar mais ao saldo
+
+OBS.: A palavra reservada “this” aponta para os atributos e métodos das instâncias, não para atributos ou métodos da classe que são estáticos.
+_________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 7
+
+O que é Stack e Heap?
+São duas regiões da memória RAM (Random Access Memory) utilizadas durante a execução de um programa.
+
+A Stack possui o comportamento de pilha (LIFO – Last In First Out) e é utilizada para empilhar variáveis locais, referências de objetos armazenados na Heap e chamadas para métodos.
+
+A Heap possui o comportamento de alocação dinâmica, ela armazena objetos criados e seus atributos, arrays, entre outras estruturas de dados criadas dinamicamente durante a execução do programa.
+
+## UML (Unified Modeling Language)
+
+- É uma linguagem visual para especificação, visualização e documentação de software!
+- O diagrama de classes, é um dos vários tipos de diagramas oferecidos pela linguagem UML
+Ex.:
+Classe: Pessoa
+- nome: String
+- idade: int
++ falar()
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 8
+
+Em sistemas orientados a objetos, é comum que classes precisem interagir entre si.
+
+- Chamamos essa comunicação de Associação!!
+- Uma associação representa um relacionamento entre objetos, indicando que eles se conhecem ou se utilizam.
+
+Uma associação pode ocorrer de diferentes formas:
+
+Quando um objeto possui outro objeto (o relacionamento “tem um”)
+Quando um objeto utiliza outro para executar uma ação.
+
+Composição:
+Na composição, o objeto interno é criado e controlado pela classe principal.
+
+👉 Ele não faz sentido existir sozinho.
+
+Agregação:
+Na agregação, o objeto é passado de fora.
+
+👉 Ele pode existir independentemente.
+
+Dica: Criou com new dentro da classe → Composição / Recebeu por parâmetro (setter) → Agregação
+
+Resumo! A pergunta que precisa ser feita é: “faz sentido a dependência?”
+
+- Associação é apenas um vínculo. Os objetos são independentes;
+- Agregação possui uma dependência fraca, mas ainda sim os objetos são mais independentes;
+- Composição que já possui uma dependência forte, onde os objetos dependem um do outro para existir;
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 9
+
+Arrays: estruturas usadas para armazenar um ou vários valores do mesmo tipo em uma única variável, organizados em sequência na memória e acessados por índice.
+
+Relembrando: Stack guarda variáveis, referências e controle de execução. Já a Heap guarda objetos, atributos dos objetos e arrays.
+
+Podemos também declarar arrays bidimensionais (matriz) ou com várias dimensões: int [][] matrizExemplo = new int [5][5];
+Nesse exemplo temos um array bidimensional “5 por 5”. Ou ainda, “5 linhas e 5 colunas”. Uma matriz quadrada. Nesse caso, precisamos de dois loops para percorrer as posições dos arrays de linha e colunas.
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 10
+
+Pacotes são usados para organizar, agrupar e controlar o acesso às classes, funcionando como uma estrutura de pastas lógicas no código.
+
+O padrão da Sun (empresa que criou o Java) para dar nome aos pacotes é relativo ao nome da empresa que desenvolveu a classe. Exemplos:
+• br.com.nomedaempresa.nomedoprojeto.subpacote
+• br.com.nomedaempresa.nomedoprojeto.subpacote2
+• br.com.nomedaempresa.nomedoprojeto.subpacote2.subpacote3
+
+Cada “.” (ponto) indica um novo subpacote, isto é, pacote dentro de pacote. Pode ser visto como um diretório dentro de outro.
+
+O Fully-Qualified-Name contém o nome de todos os pacotes onde a classe está presente. Assim, o compilador sabe exatamente qual classe queremos.
+
+Podemos facilitar a nossa vida, utilizando a palavra chave import. Com ela podemos, no início da classe, descrever quais outras classes de outros pacotes vamos utilizar.
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 11
+
+Ao invés de deixarmos os atributos das nossas classes serem acessados por qualquer usuário que tenha acesso (Seja por imports ou associação) ao código, vamos proteger os membros de nossa classe com o "private"
+Ex.:
+public class Conta {
+    private double saldo;
+    private int numero;
+    private double limite;
+    private Cliente titular;
+
+    public void saque(double quantia) {
+        if (this.saldo > quantia)
+            this.saldo -= quantia;
+    }
+}
+Com essa modificação, os membros da classe agora só podem ser acessados de dentro da própria classe.
+O Encapsulamento permite esconder detalhes da implementação. Quem chama o método saque() sabe que existe um teste para checar o saldo? É exatamente isso que queremos.
+O modificador de acesso private também pode ser utilizado em métodos
+
+O que vimos até esse momento é o conceito de encapsulamento de dados.
+
+- Esconder o acesso aos atributos (membros);
+- Esconder implementação dos métodos.
+
+O modificador private torna os membros da classe acessíveis somente na própria classe. Para prover uma forma controlada e segura de acesso aos membros da classe, utilizaremos os getters e setters. Crie Getters e Setters apenas se realmente for necessário. Você pode criar apenas Getters ou Setters em variáveis que necessitem acesso externo.
+Ou seja, o encapsulamento existe para trazer SEGURANÇA aos dados.
+
+POJO (Plain Old Java Object), ou seja, um objeto Java simples, que não depende de frameworks, não herda classes especiais e não implementa interfaces obrigatórias.
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+Aula 12
+
+Construtores: Quando usamos a palavra reservada “new” para instanciar um novo objeto de uma determinada classe, estamos também invocando o construtor desta classe que cria a sua instância, por isso o nome “construtor”, pois ele “constrói”.
+Quando não declaramos o construtor explicitamente, o Java invoca o construtor implícito (Padrão). Porém, se passamos a deixar um construtor visível, o padrão não é mais fornecido
+
+Mas e se ainda desejamos oferecer uma opção de construtor vazio?
+Podemos fazer a sobrecarga de construtores. Basta escrever parâmetros diferentes!
+
+static define membros que pertencem à classe e são compartilhados, e embora construtores não possam ser estáticos, o static é essencial para controlar, contar ou padronizar a criação de objetos.
+
+Qual o propósito de métodos Static?
+Métodos utilitários ou helpers que não requerem modificação de estado. Elimina-se a necessidade de criação de objetos só para acesso algum método.
+____________________________________________________________________________________________________________________________________________________________________________________________

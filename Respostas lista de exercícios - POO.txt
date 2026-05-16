@@ -1,0 +1,43 @@
+Respostas lista de exercícios - POO
+
+1 - b 
+2 - c
+3 - b
+4 - b
+5 - c
+6 - b
+7 - c
+8 - b
+9 - c
+10 - b
+11 - b
+12 - Encapsulamento é quando nomeamos um atributo ou como private, public ou protected em uma classe, dessa forma controlando a privacidade destas informações para que não passem para qualquer usuário, podemos fazer isso entre classes como "banco" e "cliente", na qual o cliente tem acesso à sua conta, porém não ao id que o identifica no sistema do banco (private int id). Herança nada mais é que o ato de compartilhar atributos e métodos de uma classe inteiramente para outra, dessa forma dizemos que a classe que compartilha as informações é a classe "mãe" e a classe que recebe, "filha". Abstração é quando classificamos uma classe, dizendo que os objetos que nela estão são desnecessários para as aplicações num geral, portanto seus atributos só podem ser compartilhados por herança. Poliformismo por fim é quando mudamos a funcionalidade de um método de uma classe quando transportada para outra classe, mantendo a correlação entre elas, porém adequando o método ao que foi pedido na classe que o recebeu.
+13 - Encapsulamento é quando nomeamos um atributo ou como private, public ou protected em uma classe, dessa forma controlando a privacidade destas informações para que não passem para qualquer usuário, podemos fazer isso entre classes como "banco" e "cliente", na qual o cliente tem acesso à sua conta, porém não ao id que o identifica no sistema do banco (private int id).
+Podemos considerar uma boa prática pois traz segurança e organização, uma vez que ele reduz a dependência entre classes, assim podemos mudar a estrutura do código sem quebrar o restante do sistema.
+14 - Declarar como public os atributos em sí não é um problema, mas isso significa que estes atributos podem ser acessados e monitorados de qualquer outra classe, o que acaba expondo as 
+informações quebrando o sistema lógico da programação feita.
+15 - Getters são funções que apenas leem os atributos privados e Setters podem controlar o valor privado, mudando seu valor por exemplo. Ambos são métodos utilizados para prover de forma segura o acesso aos membros de uma classe específica, mesmo quando utilizamos o private nos objetos. Se no projeto do código já utilizamos uma função que retorna o valor de um atributo privado, não é necessário o uso de Getters e Setters
+16 - A diferença entre os dois é justamente na chamada destas variáveis. A variável estática é acessada dentro da própria classe sem a necessidade de instanciar um objeto específico, totalmente contrário à variável de instância, como se diz no nome. A variável estática tem uma única cópia na memória compartilhada por todos os objetos, enquanto a de instância tem uma cópia por objeto criado. A variável estática é acessada por classe.variavel, enquanto que a variável de instancia é acessada por objeto.variavel.
+Exemplo em conjunto:
+class Carro {
+    String modelo;                  // instância — cada carro tem o seu
+    static int totalCarros = 0;     // estática — compartilhada por todos
+
+    Carro(String modelo) {
+        this.modelo = modelo;
+        totalCarros++; // incrementa a mesma variável para todos
+    }
+}
+
+Carro c1 = new Carro("Fusca");
+Carro c2 = new Carro("Civic");
+
+System.out.println(Carro.totalCarros); // 2 — acessado pela classe, não pelo objeto
+17 - É um método especial com o mesmo nome da classe, sem tipo de retorno, invocado automaticamente ao criar um objeto com 'new'. Serve para inicializar o estado do objeto. Quando não declaramos um construtor explicitamente em uma classe, o próprio JAVA invoca um construtor padrão, e se declararmos corretamente, o padrão não é mais fornecido. 
+18 - Classe é o modelo/definição de algo, enquanto objeto é a instância concreta criada a partir dessa classe. Exemplos: A classe poderia ser Pessoa(), dessa forma objeto seria "joão"
+19 - Herança é quando é compartilhado atributos e métodos de uma classe para outra a partir da linha "extends", fazendo com que uma classe seja a "Mãe" e outra seja a "Filha". Herança ajuda em evitar a duplicação de código, facilitar a manutenção de informações, organizar as hierarquias entre as classes.
+20 - Quando eu quero mostrar que uma variável é a mesma entre todos os objetos referentes à classe, eu uso static (método helper - não requerem mudança). A main é usada como static pois todas as variáveis que forem esctritas na main precisam ser relacionadas entre as outras informações (objetos, métodos). Uma coisa ruim que pode ocorrer no exagero de static, isso deixa o código rígido, dificultando a manutenção.
+21 - A programação estruturada nada mais é que organizar a lógica do código com grande ênfase em repetições, sequências e estruturas condicionais, enquanto que POO separa os processos de lógica em classes e objetos, importando os atributos necessários de cada classe na Main. POO se destaca pela organização e menor complexidade estrutural, além da possibilidade de utilizar conceitos lógicos de POO (encapsulamento, herança, etc)
+22 - O erro está nas linhas "Conta conta = new Conta();", "conta.saldo = 1000.0;", "conta.numero = 42;". Está errado pois os objetos da classe estão privados, portanto não deveria ser instânciados dessa forma. Podemos corrigir esse erro com um Setter, assim podemos mudar os objetos instânciados. 
+23 - Olá! Eu sou Ozzy Osbourne, tenho 28 anos. / Olá! Eu sou Bruce Dickinson, tenho 30 anos.
+24 - 

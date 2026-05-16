@@ -16,15 +16,15 @@ public class Banda {
         System.out.println(this.nome);
         System.out.println(this.genero);
 
-        for(Membro m: membros){
+        /*for(Membro m: membros){
             if(m != null)
                 System.out.println(m.getNome());
         }
         System.out.println();
-        for(Musica mu: musicas)
+        for(Musica mu: musicas)*/
     }
 
-    public void addMusicanova(Musica musica){
+   /*  public void addMusicanova(Musica musica){
         for(int i = 0; i < this.musica.length; i++){
             if(musica[i] == null){
                 musica[i] = musica;
@@ -39,5 +39,5 @@ public class Banda {
                 membros[i] =
             }
         }
-    }
+    }*/
 }
